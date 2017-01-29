@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Trivia App</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="welcome_to_trivia_app">Welcome To Trivia App</string>
+    <string name="trivia_downloading">Downloading Trivia...</string>
+    <string name="trivia_ready">Trivia Ready</string>
+    <string name="exit">Exit</string>
+    <string name="start_trivia">Start Trivia</string>
+    <string name="time_left">Time Left:</string>
+    <string name="_0_seconds">0 seconds</string>
+    <string name="next">Next</string>
+    <string name="quit">Quit</string>
+    <string name="trivia_stats">Trivia Stats</string>
+    <string name="correct_answers">Correct Answers</string>
+    <string name="_0">0%</string>
+    <string name="try_again_and_see_if_you_can_get_all_the_correct_answers">Try again and see if you can get all the correct answers</string>
+    <string name="try_again">Try Again</string>
+    <string name="q1">Q1</string>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="group27.mad.com.triviaapp.StatsActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvHeadingLabel"
+        android:text="@string/trivia_stats"
+        android:textSize="23sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        /><TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCorrectAns"
+    android:layout_below="@+id/tvHeadingLabel"
+        android:text="@string/correct_answers"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/black"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linlay"
+        android:layout_below="@+id/tvCorrectAns"
+        android:layout_marginTop="@dimen/activity_horizontal_margin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPercentage"
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:text="@string/_0"
+            android:layout_weight="0.2"/>
+        <ProgressBar
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+android:progress="0"
+            android:max="100"
+            android:id="@+id/pbarStats"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_weight="0.8"
+            android:layout_marginRight="30dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTryAgain"
+        android:text="@string/try_again_and_see_if_you_can_get_all_the_correct_answers"
+        android:textColor="@android:color/black"
+        android:textSize="17sp"
+        android:layout_below="@id/linlay"
+        android:layout_marginTop="100dp"/>
+    <Button
+        android:id="@+id/btnQuit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="@string/quit"
+        android:textSize="17sp"
+        android:onClick="quitToMain"/>
+
+    <Button
+        android:id="@+id/btnTryAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="tryAction"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="@string/try_again"
+        android:textSize="17sp" />
+
+
+</RelativeLayout>
